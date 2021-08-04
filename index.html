@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/053d712777.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Portafolio Personal - Dario Kupec</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <h1>Dario Kupec</h1>
+                <p>Desarrollador Web</p>
+            </div>
+            <form action="">
+                <input type="text" class="search-bar" id="search-bar" placeholder="Search">
+            </form>
+            <div class="categories" id="categories">
+                <a href="#todos" class="active">Todos</a>
+                <a href="#animales">Animales</a>
+                <a href="#caminos">Caminos</a>
+                <a href="#casas">Casas</a>
+                <a href="#deportes">Deportes</a>
+                
+            </div>
+        </header>
+        <section class="grid" id="grid">
+            <div class="item"
+                data-categorie="animales"
+                data-label="animales gato gatito felino naturaleza"
+                data-description="Gatito"
+            >
+                <div class="item-content">
+                    <img src="img/animal1.jpg" alt="imagen de un gato">
+                </div>
+            </div>
+            <div class="item"
+                data-categorie="animales"
+                data-label="animales cazador aguila ave naturaleza"
+                data-description="Aguila"
+            >
+                <div class="item-content">
+                    <img src="img/animal2.jpg" alt="imagen de un aguila">
+                </div>
+            </div>
+            <div class="item"
+                data-categorie="animales"
+                data-label="animales animal zorro cazador naturaleza"
+                data-description="Zorro"
+            >
+                <div class="item-content">
+                    <img src="img/animal3.jpg" alt="imagen de un zorro">
+                </div>
+            </div>
+            <div class="item"
+                data-categorie="animales"
+                data-label="animales tigre felino cazador naturaleza"
+                data-description="Tigre"
+            >
+                <div class="item-content">
+                    <img src="img/animal4.jpg" alt="imagen de un tigre">
+                </div>
+            </div>
+            <div class="item"
+                data-categorie="caminos"
+                data-label="caminos campo arboles bosque naturaleza vegetacion paisaje"
+                data-description="Camino en el campo"
+            >
+                <div class="item-content">
+                    <img src="img/road1.jpg" alt="imagen de un camino">
+                </div>
+            </div>
+            <div class="item"
+                data-categorie="caminos"
+                data-label="caminos campo arboles bosque naturaleza vegetacion paisaje"
+                data-description="Camino en el bosque"
+            >
+                <div class="item-content">
+                    <img src="img/road2.jpg" alt="imagen de un camino">
+                </div>
+            </div>
+            <div class="item"
+                data-categorie="caminos"
+                data-label="caminos campo arboles bosque naturaleza vegetacion paisaje"
+                data-description="Camino en el bosque"
+            >
+                <div class="item-content">
+                    <img src="img/road3.jpg" alt="imagen de un camino">
+                </div>
+            </div>
+            <div class="item"
+                data-categorie="deportes"
+                data-label="esqui deporte nieve pendiente competencia"
+                data-description="Hombre esquiando"
+            >
+                <div class="item-content">
+                    <img src="img/sport1.jpg" alt="imagen de un hombre esquiando">
+                </div>
+            </div>
+            <div class="item"
+                data-categorie="deportes"
+                data-label="equipo nfl deporte competencia football"
+                data-description="Football Americano"
+            >
+                <div class="item-content">
+                    <img src="img/sport2.jpg" alt="imagen de football americano">
+                </div>
+            </div>
+            <div class="item"
+                data-categorie="deportes"
+                data-label="conductor deporte moto carrera competencia motociclismo piloto"
+                data-description="Motociclismo"
+            >
+                <div class="item-content">
+                    <img src="img/sport3.jpg" alt="imagen de un hombre manejando una moto">
+                </div>
+            </div>
+            <div class="item"
+                data-categorie="casas"
+                data-label="casa piedra paisaje"
+                data-description="Casa de tres niveles"
+            >
+                <div class="item-content">
+                    <img src="img/house1.jpg" alt="imagen de una casa">
+                </div>
+            </div>
+            <div class="item"
+            data-categorie="casas"
+            data-label="casa lago muelle paisaje naturaleza"
+            data-description="Casa junto al lago"
+        >
+            <div class="item-content">
+                <img src="img/house2.jpg" alt="imagen de una casa">
+            </div>
+        </div>
+        </section>
+
+        <section class="overlay" id="overlay">
+            <div class="container-img">
+                <button id="btn-close-popup"><i class="fas fa-times"></i></button>
+                <img src="" alt="">
+                <p class="description"></p>
+            </div>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/muuri@0.9.3/dist/muuri.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
